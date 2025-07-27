@@ -111,8 +111,28 @@ function easy_bots_full_list() {
         'proxycrawl',
         'scrapinghub',
         'scraperapi',
+        'scrapy-user-agent',
         'crawlera',
         'residential-proxy',
+        'massdns',
+        'dnsrecon',
+        'dnsenum',
+        'check',
+        'httpie',
+        'winhttp',
+        'curl/',
+        'curl-agent',
+        'pycurl',
+        'requests-html',
+        'request-promise',
+        'grablib',
+        'scrape-it',
+        'scrapingbee',
+        'surfraw',
+        'nodecrawler',
+        'ghost-crawler',
+        'mechanicalsoup',
+
 
         // SEO, marketing, analyse
         'semrushbot',
@@ -168,7 +188,11 @@ function easy_bots_full_list() {
         'ahrefssiteaudit',
         'barkrowler/1.0',
         'ScreamingFrogSEOSpider',
-
+        'snowplowanalytics',
+        'matomo',
+        'optimizely',
+        'tagassistant',
+        'simoahava',
 
         // Archives et prévisualisation
         'archive.org_bot',
@@ -240,6 +264,17 @@ function easy_bots_full_list() {
         'okhttp/',
         'got (node.js)',
         'node-fetch',
+        'ratproxy',
+        'skipfish',
+        'httprint',
+        'reconspider',
+        'pentest-tools',
+        'fierce',
+        'enum4linux',
+        'nuclei',
+        'canarytokens',
+        'crimson',
+
 
 
 
@@ -304,6 +339,18 @@ function easy_bots_full_list() {
         'midjourney',
         'nlpcloud',
         'anybot/',
+        'youtube-creators-bot',
+        'AnthropicAI-User',
+        'facebookcatalog',
+        'gpt-user-agent',
+        'serpapi-bot',
+        'HumataBot',
+        'gpt-researcher',
+        'yuzu',
+        'lemonfox',
+        'blackboxai',
+        'devinbot',
+
 
 
         // AI chinoise
@@ -355,6 +402,30 @@ function easy_bots_full_list() {
         'LuckyOrange',
         'Smartlook',
         'PlausibleBot', //tracking externe
+        'sublist3r',
+        'amass',
+        'recon-ng',
+        'maltego',
+        'powershell',
+        'cobalt strike',
+        'empire',
+        'msfconsole',
+        'fimap',
+        'sqlninja',
+        'sqlsus',
+        'sqlbrute',
+        'xsser',
+        'beef',
+        'veil',
+        'ffuf',
+        'wfuzz',
+        'selenium',
+        'headless',
+        'undetected_chromedriver',
+        'puppeteer-extra',
+        'phantom',
+
+
 
 
         // Autres

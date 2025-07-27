@@ -99,7 +99,9 @@ function easy_bots_get_categorized_list() {
             'Playwright', 'puppeteer', 'ScreenerBot', 'SEOkicks-Robot', 'jaeles', 'arachni', 'metasploit', 'nessusagent', 'acunetix-standard',
             'netsparker-agent', 'sqlmap', 'hydra', 'dirbuster/', 'dirsearch/', 'zaproxy', 'burpcollaborator', 'commix', 'nikto scanner', 'arachni-scanner',
             'wapiti', 'crawler-joomscan','scrapy/', 'python-httplib', 'mechanize', 'requests', 'httpx', 'fetchbot', 'axios/', 'okhttp/',
-        'got (node.js)', 'node-fetch',
+        'got (node.js)', 'node-fetch', 'ratproxy', 'skipfish', 'httprint', 'reconspider','pentest-tools','fierce',
+        'enum4linux','nuclei','canarytokens','crimson',
+
         ],
         'Bots IA' => [
         'quora link preview', 'NeevaBot', 'QuivrBot', 'KomoSearch', 'komosearchbot', 'WriterAIBot', 'KagiBot', 'kagibot', 'youchatbot', 
@@ -112,7 +114,9 @@ function easy_bots_get_categorized_list() {
         'YouBot', 'Amazonbot/0.1', 'applebot', 'Applebot-Extended/1.0', 'TimpiBot/0.8', 'ernie bot', 'qwen', 'hunyuan', 'YisouSpider', 'Barkrowler',
         'Bytespider-image', 'ai-applied-ai-crawler', 'huggingface', 'midjourney', 'nlpcloud', 'anybot/',
         'doubao', 'deepseek', 'moonshot', 'minimax', 'zhipu', 'modelscope', 'baichuan', 'pi.ai', 'suno.ai', 'magickpen', 'yarn-ai',
-        'openrouter.ai', 'deepai', 'modelscopebot', 'openllm',
+        'openrouter.ai', 'deepai', 'modelscopebot', 'openllm', 'youtube-creators-bot','AnthropicAI-User','facebookcatalog',
+        'gpt-user-agent','serpapi-bot','HumataBot','gpt-researcher','yuzu','lemonfox','blackboxai','devinbot',
+
         ],
         'SEO, marketing, analyse' => [
             'semrushbot', 'ahrefsbot', 'dotbot', 'rogerbot', 'linkdexbot',
@@ -124,13 +128,17 @@ function easy_bots_get_categorized_list() {
             'trendictionbot', 'proxycurl', 'linkpreview', 'web-sniffer', 'snowplow', 'segmentbot', 'keenbot', 'quantcastbot', 
             'domaincrawler', 'trendkite', 'riddler', 'crawler4j', 'robot', 'ahrefssiteaudit', 'seoscanners', 'webmeup', 'seekport bot', 
             'sistrix', 'openlinkprofiler', 'searchmetricsbot', 'majestic12', 'backlinkcrawler', 'barkrowler/1.0', 
+            'snowplowanalytics', 'matomo','optimizely','tagassistant','simoahava',
         ],
         'Surveillance, cloud, etc...' => [
         'microsoftpreview', 'msbot','amazonbot', 'cloudflare', 'cloudflare-amp-fetcher', 'cloudflare-health-check', 'cloudflare-custom-hostname',
         'bushbaby', 'chrome-ppp', 'downtimedetector', 'downnotifier.com', 'gotmonitor', 'hosttracker', 'ips-agent', 'miniflux', 'monibot',
         'monitoring360bot', 'monstabot', 'nxbot', 'pingomatic', 'updown.io', 'urlcheckr', 'watchmouse',
         'google-structured-data-testing-tool', 'turnitinbot', 'gobuster', 'pricedroneshoppingbot', 'luminati', 'brightdata', 'oxylabs',
-        'smartproxy', 'proxycrawl', 'scrapinghub', 'scraperapi', 'crawlera', 'residential-proxy',
+        'smartproxy', 'proxycrawl', 'scrapinghub', 'scraperapi', 'scrapy-user-agent', 'crawlera', 'residential-proxy', 'massdns', 'dnsrecon', 'dnsenum',
+        'check', 'httpie', 'winhttp', 'curl/','curl-agent','pycurl','requests-html','request-promise','grablib','scrape-it',
+        'scrapingbee','surfraw','nodecrawler','ghost-crawler','mechanicalsoup',
+
         ],
         'Moteurs de base' => [
             'bot', 'crawl', 'slurp', 'spider', 'crawler', 'scanner', 'fetch', 'monitor',
@@ -146,6 +154,11 @@ function easy_bots_get_categorized_list() {
         'yandexbot', 'mail.ru_bot', 'zmap', 'fofa', 'python-requests', 'python-urllib', 'libwww-perl', 'nessus', 'paros',
         'nikto', 'openvas', 'virustotal', 'semaltbot', 'dataprovider spider', 'sbl-bot', 'mauibot', 'reqwest',
         'alphabot', 'NPBot', 'Hotjar', 'Mixpanel', 'CrazyEgg', 'FullStory', 'inspectlet', 'LuckyOrange', 'Smartlook', 'PlausibleBot', 
+        'sublist3r', 'amass', 'recon-ng', 'maltego', 'powershell', 'cobalt strike', 'empire', 'msfconsole', 'fimap', 'sqlninja', 'sqlsus', 
+        'sqlbrute', 'xsser', 'beef', 'veil', 'ffuf', 'wfuzz', 'selenium','headless','undetected_chromedriver',
+        'puppeteer-extra','phantom',
+
+
     ],
         'Outils divers' => [
             'uptimerobot', 'uptimia', 'datadog', 'statuscake', 'newrelicpinger',
