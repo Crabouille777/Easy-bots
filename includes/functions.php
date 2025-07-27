@@ -30,7 +30,7 @@ function easy_bots_is_bot($user_agent = null) {
             return strlen($b) - strlen($a);
         });
         return [
-            'bot_name' => $matches[0],
+            'bot_name' => $matches[0], // le plus spécifique
             'matches'  => $matches
         ];
     }
@@ -70,7 +70,6 @@ function easy_bots_is_blocked($user_agent = '') {
 
 
 function easy_bots_log_bot($bot_name, $user_agent, $ip) {
-
     $log_entry = date('Y-m-d H:i:s') . " | $bot_name | $ip | $user_agent" . PHP_EOL;
     $log_file = EASY_BOTS_PATH . 'logs/bot-log.txt';
 
@@ -95,7 +94,6 @@ function easy_bots_parse_log() {
 
     $lines = file($log_file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     foreach ($lines as $line) {
-        // Format attendu : YYYY-MM-DD HH:MM:SS | bot_name | IP | user-agent
         if (preg_match('/^(\d{4}-\d{2}-\d{2})/', $line, $matches)) {
             $date = $matches[1];
             if (!isset($data[$date])) {
@@ -105,7 +103,7 @@ function easy_bots_parse_log() {
         }
     }
 
-    ksort($data);
+    ksort($data); // Trie par date croissante
     return $data;
 }
 
@@ -119,7 +117,6 @@ function easy_bots_parse_log_daily() {
 
     $lines = file($log_file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     foreach ($lines as $line) {
-        // Format attendu : YYYY-MM-DD HH:MM:SS | bot_name | IP | user-agent
         if (preg_match('/^\d{4}-\d{2}-\d{2} (\d{2}):\d{2}:\d{2} \|/', $line, $matches)) {
             $hour = $matches[1] . ':00';
             if (!isset($data[$hour])) {
@@ -129,7 +126,7 @@ function easy_bots_parse_log_daily() {
         }
     }
 
-    // heures manquantes pour avoir toutes les 24 heures
+    // Complément des heures manquantes pour avoir toutes les 24 heures
     for ($h = 0; $h < 24; $h++) {
         $key = sprintf('%02d:00', $h);
         if (!isset($data[$key])) {
@@ -207,7 +204,7 @@ function easy_bots_parse_log_monthly() {
         if (preg_match('/^(\d{4})-(\d{2})-(\d{2})/', $line, $matches)) {
             $month_num = (int)$matches[2]; // Mois en nombre 1..12
 
-            $months = array_keys($data); // Les clés du tableau data (les abréviations)
+            $months = array_keys($data); // Clés du tableau data (abréviations)
 
             // Attention : $month_num est de 1 à 12, les indices PHP commencent à 0 donc $month_num-1
             $month_key = $months[$month_num - 1];
