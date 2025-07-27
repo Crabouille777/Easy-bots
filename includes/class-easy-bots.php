@@ -11,8 +11,8 @@ class Easy_Bots {
         add_action('init', [__CLASS__, 'detect_and_log_bot']);
     }
 
+    
     // Détection du bot et journalisation.
-
     public static function detect_and_log_bot() {
     $user_agent = $_SERVER['HTTP_USER_AGENT'] ?? '';
     $user_agent = trim($user_agent);
@@ -21,7 +21,7 @@ class Easy_Bots {
 
     $log_file = self::get_log_file_path();
 
-    // Créer le dossier logs si nécessaire
+    // Créer dossier logs si nécessaire
     $log_dir = dirname($log_file);
     if (!file_exists($log_dir)) {
         mkdir($log_dir, 0755, true);
@@ -98,7 +98,7 @@ class Easy_Bots {
         $line = trim($line);
         if (empty($line)) return null;
 
-        // Éviter de rajouter plusieurs fois | BLOCKED
+        // Évite de rajouter plusieurs fois | BLOCKED
         if (stripos($line, '| BLOCKED') !== false) {
             return $line;
         }
@@ -116,16 +116,17 @@ class Easy_Bots {
     return implode("\n", $parsed_log);
 }
 
-    // Retourne le chemin complet vers le fichier de log.
-
+    /**
+     * Retourne le chemin complet vers le fichier de log.
+     */
     private static function get_log_file_path() {
         return plugin_dir_path(__DIR__) . self::LOG_DIR . self::LOG_FILE;
     }
 
-
-    //Retourne la liste des bots connus.
-    // À adapter ou remplacer selon les besoins.
-
+    /**
+     * Retourne la liste des bots connus.
+     * À adapter ou remplacer selon les besoins.
+     */
     public static function get_bot_list() {
         return [
             'googlebot',
@@ -133,13 +134,13 @@ class Easy_Bots {
             'ahrefsbot',
             'discordbot',
             'python-requests',
-            // Ajout des bots à détecter
+        
         ];
     }
 
 }
 
-}
+} // Fin class_exists guard
 
 // Initialisation
 add_action('plugins_loaded', ['Easy_Bots', 'init']);
