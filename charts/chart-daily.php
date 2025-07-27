@@ -9,7 +9,7 @@ for ($h = 0; $h < 24; $h++) {
     $hours[] = sprintf('%02d:00', $h);
 }
 
-// Si $log_data est vide ou non tableau, on crée un tableau avec 0 pour chaque heure
+// Si $log_data est vide, création d'un tableau avec 0 pour chaque heure
 if (empty($log_data) || !is_array($log_data)) {
     $log_data = array_fill_keys($hours, 0);
 }
